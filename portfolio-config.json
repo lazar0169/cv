@@ -1,0 +1,103 @@
+{
+  "profile": {
+    "name": "Lazar Manasijevic",
+    "role": "Technical Lead & Senior Software Engineer",
+    "image": "https://filedn.eu/l6FBWQ7La8BkrAUQU9XqlB5/cv2.png",
+    "summary": "Specializing in scalable backend systems and modular frontend architecture. Expert in <strong>Node.js, TypeScript, and React</strong>. Focused on leadership, clean code, and reliable delivery."
+  },
+  "contact": [
+    {
+      "type": "email",
+      "label": "lazmanex@gmail.com",
+      "link": "mailto:lazmanex@gmail.com",
+      "icon": "email"
+    },
+    {
+      "type": "phone",
+      "label": "+381 64 500 0448",
+      "link": "tel:+381645000448",
+      "icon": "phone"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/manasijevic-lazar/",
+      "icon": "linkedin"
+    }
+  ],
+  "skills": [
+    "Node.js",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "PostgreSQL",
+    "AWS",
+    "MongoDB",
+    "Nest.js",
+    "Vue.js",
+    "System Design"
+  ],
+  "experience": [
+    {
+      "title": "Technical Lead",
+      "company": "Florence Healthcare (USA)",
+      "date": "Oct 2023 – Present",
+      "responsibilities": [
+        "Designs and overhauls development processes and standards; educates team for consistency.",
+        "Troubleshoots complex issues requiring deep analysis; applies sound judgment in technical decisions.",
+        "Assists with project planning and execution to ensure timeline and scope adherence.",
+        "Responsible for engineer performance, professional development, and merit-based promotion proposals.",
+        "Ensures release processes are well-defined and consistently followed."
+      ]
+    },
+    {
+      "title": "Tech Lead / Engineering Manager",
+      "company": "Codeus (Niš, Serbia)",
+      "date": "Mar 2020 – Oct 2023",
+      "responsibilities": [
+        "Delivered complex projects for clients in Sweden, Canada, Switzerland, and the USA.",
+        "Acted as full-stack lead, focusing on high-quality backend architecture and adaptable frontends.",
+        "Designed sophisticated relational and non-relational databases for efficient data management.",
+        "Adopted modular development approaches to ensure future scalability.",
+        "Oversaw KPI analysis to align technical execution with business objectives."
+      ]
+    },
+    {
+      "title": "Lead Software Engineer",
+      "company": "Fazi & Triple Crown Company",
+      "date": "Oct 2016 – Mar 2020",
+      "responsibilities": [
+        "Led integration of online casino games (slots, roulette, poker) for global markets.",
+        "Co-created an in-house streaming solution for virtual/live roulette games.",
+        "Directed creation of \"Backoffice\" Management Service using a custom framework.",
+        "Managed development of the Casino Management System and Multi-game platform."
+      ]
+    },
+    {
+      "title": "Freelance Developer",
+      "company": "Invitious Team",
+      "date": "Aug 2015 – Jul 2016",
+      "responsibilities": []
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. Electrical & Computer Engineering",
+      "school": "Faculty of Electronic Engineering, University of Niš",
+      "date": "2011 – 2016"
+    },
+    {
+      "degree": "Diploma in Computers & I.T.",
+      "school": "Electronic Engineering High School \"Nikola Tesla\"",
+      "date": "2007 – 2011"
+    }
+  ],
+  "languages": [
+    "Serbian (Native)",
+    "English (Professional)",
+    "German (Beginner)"
+  ],
+  "footer": {
+    "text": "© 2025 Lazar Manasijevic"
+  }
+}

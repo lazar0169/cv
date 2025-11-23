@@ -15,12 +15,6 @@
             "icon": "email"
         },
         {
-            "type": "phone",
-            "label": "+381 64 500 0448",
-            "link": "tel:+381645000448",
-            "icon": "phone"
-        },
-        {
             "type": "linkedin",
             "label": "LinkedIn",
             "link": "https://www.linkedin.com/in/manasijevic-lazar/",

@@ -1,0 +1,283 @@
+{
+    "profile": {
+        "name": "Lazar Manasijevic",
+        "role": "Technical Lead & Full-Stack Engineer",
+        "image": "https://filedn.eu/l6FBWQ7La8BkrAUQU9XqlB5/cv2-min.png",
+        "summary": "Backend architecture, cloud-native systems, and technical leadership for high-impact teams",
+        "location": "Serbia",
+        "tagline": "Building scalable systems and leading engineering teams to deliver reliable, production-grade software"
+    },
+    "contact": [
+        {
+            "type": "email",
+            "label": "lazar@manasijevic.com",
+            "link": "mailto:lazar@manasijevic.com",
+            "icon": "email"
+        },
+        {
+            "type": "phone",
+            "label": "+381 64 500 0448",
+            "link": "tel:+381645000448",
+            "icon": "phone"
+        },
+        {
+            "type": "linkedin",
+            "label": "LinkedIn",
+            "link": "https://www.linkedin.com/in/manasijevic-lazar/",
+            "icon": "linkedin"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Backend & APIs",
+            "skills": [
+                "Node.js",
+                "TypeScript",
+                "NestJS",
+                "Express",
+                "Fastify",
+                "Python"
+            ],
+            "primary": true
+        },
+        {
+            "category": "Frontend & UI",
+            "skills": [
+                "React",
+                "Next.js",
+                "Angular",
+                "Vue.js",
+                "TypeScript"
+            ],
+            "primary": true
+        },
+        {
+            "category": "Cloud & DevOps",
+            "skills": [
+                "AWS (Lambda, ECS, S3, RDS)",
+                "Docker",
+                "CI/CD",
+                "DigitalOcean"
+            ],
+            "primary": true
+        },
+        {
+            "category": "Databases & Data Modeling",
+            "skills": [
+                "PostgreSQL",
+                "MongoDB",
+                "Redis",
+                "Database Design"
+            ],
+            "primary": true
+        },
+        {
+            "category": "Security & Authentication",
+            "skills": [
+                "Auth0",
+                "OAuth2",
+                "JWT",
+                "RBAC",
+                "Data Protection"
+            ],
+            "primary": false
+        },
+        {
+            "category": "Leadership & Process",
+            "skills": [
+                "Team Leadership",
+                "Code Reviews",
+                "Mentoring",
+                "Agile",
+                "System Design"
+            ],
+            "primary": false
+        }
+    ],
+    "experience": [
+        {
+            "title": "Technical Lead",
+            "company": "Florence Healthcare (USA)",
+            "date": "Oct 2023 – Present",
+            "responsibilities": [
+                "Designs and overhauls development processes and standards; educates team for consistency",
+                "Troubleshoots complex issues requiring deep analysis; applies sound judgment in technical decisions",
+                "Assists with project planning and execution to ensure timeline and scope adherence",
+                "Responsible for engineer performance, professional development, and merit-based promotion proposals",
+                "Ensures release processes are well-defined and consistently followed"
+            ]
+        },
+        {
+            "title": "Tech Lead / Engineering Manager",
+            "company": "Codeus (Niš, Serbia)",
+            "date": "Mar 2020 – Oct 2023",
+            "responsibilities": [
+                "Delivered complex projects for clients in Sweden, Canada, Switzerland, and the USA",
+                "Acted as full-stack lead, focusing on high-quality backend architecture and adaptable frontends",
+                "Designed sophisticated relational and non-relational databases for efficient data management",
+                "Adopted modular development approaches to ensure future scalability",
+                "Oversaw KPI analysis to align technical execution with business objectives"
+            ]
+        },
+        {
+            "title": "Lead Software Engineer",
+            "company": "Fazi & Triple Crown Company",
+            "date": "Oct 2016 – Mar 2020",
+            "responsibilities": [
+                "Led integration of online casino games (slots, roulette, poker) for global markets",
+                "Co-created an in-house streaming solution for virtual/live roulette games",
+                "Directed creation of Backoffice Management Service using a custom framework",
+                "Managed development of the Casino Management System and Multi-game platform"
+            ]
+        },
+        {
+            "title": "Freelance Developer",
+            "company": "Invitious Team",
+            "date": "Aug 2015 – Jul 2016",
+            "responsibilities": []
+        }
+    ],
+    "projects": [
+        {
+            "title": "Florence Healthcare Platform",
+            "role": "Technical Lead",
+            "stack": [
+                "Node.js",
+                "Python",
+                "NestJS",
+                "Express",
+                "Fastify",
+                "PostgreSQL",
+                "MongoDB",
+                "AWS",
+                "Auth0",
+                "RabbitMQ"
+            ],
+            "context": "Healthcare platform for clinical trial workflows",
+            "problem": "Internal platform needed scalable, secure services for diverse healthcare workflows",
+            "approach": "Led platform team, architected modular backend, implemented robust auth and data protection, drove best practices",
+            "result": "Delivered multiple high-impact projects, improved development velocity, enhanced security and reliability",
+            "featured": true
+        },
+        {
+            "title": "SyncPage CRM",
+            "role": "Architect & Team Lead",
+            "stack": [
+                "Node.js",
+                "Fastify",
+                "PostgreSQL",
+                "React",
+                "AWS",
+                "DigitalOcean"
+            ],
+            "context": "Customer relationship management platform",
+            "problem": "Needed a flexible CRM for varied customer needs",
+            "approach": "Designed architecture from scratch, led full-stack development, set up infrastructure and CI/CD",
+            "result": "Launched scalable CRM, streamlined client onboarding, enabled rapid feature delivery",
+            "featured": true
+        },
+        {
+            "title": "Leviant Medical Devices Management",
+            "role": "Backend Engineer",
+            "stack": [
+                "NestJS",
+                "PostgreSQL",
+                "AWS"
+            ],
+            "context": "Hospital medical device management system",
+            "problem": "Hospitals required granular management of air purifying devices",
+            "approach": "Developed backend platform, integrated hardware data, ensured secure, reliable device management",
+            "result": "Enabled seamless hospital-device workflows, improved data accuracy and operational efficiency",
+            "featured": true
+        },
+        {
+            "title": "Botello Real Estate Platform",
+            "role": "Full-Stack Engineer",
+            "stack": [
+                "Node.js",
+                "Express",
+                "Next.js",
+                "React",
+                "PostgreSQL",
+                "AWS"
+            ],
+            "context": "Property management platform for Swedish landlords",
+            "problem": "Swedish landlords needed a compliant, integrated management platform",
+            "approach": "Built full-stack solution, integrated banking and legal systems, optimized for reliability",
+            "result": "Supported thousands of users, ensured regulatory compliance, improved landlord-tenant interactions",
+            "featured": true
+        },
+        {
+            "title": "Lepaya Learning Platform",
+            "role": "Full-Stack & DevOps Engineer",
+            "stack": [
+                "Vue.js",
+                "Node.js",
+                "Fastify",
+                "NestJS",
+                "PostgreSQL",
+                "AWS"
+            ],
+            "context": "Large-scale enterprise learning platform",
+            "problem": "Large-scale learning platform required robust client/server and DevOps",
+            "approach": "Developed features across stack, automated deployments, optimized performance",
+            "result": "Supported high user growth, improved uptime, streamlined development workflows",
+            "featured": false
+        },
+        {
+            "title": "Fazi Casino Games & Engine",
+            "role": "Game Developer & Backend Engineer",
+            "stack": [
+                "JavaScript",
+                "TypeScript",
+                "Pixi.js",
+                "Node.js",
+                "React",
+                "FFMPEG"
+            ],
+            "context": "Online casino games and streaming platform",
+            "problem": "Needed interactive slot games and scalable game engines for global markets",
+            "approach": "Built bonus games, developed multiple engine versions, created in-house streaming and management apps",
+            "result": "Launched games in multiple markets, improved game performance, enabled real-time analytics",
+            "featured": false
+        }
+    ],
+    "education": [
+        {
+            "degree": "B.S. Electrical & Computer Engineering",
+            "school": "Faculty of Electronic Engineering, University of Niš",
+            "date": "2011 – 2016"
+        },
+        {
+            "degree": "Diploma in Computers & I.T.",
+            "school": "Electronic Engineering High School \"Nikola Tesla\"",
+            "date": "2007 – 2011"
+        }
+    ],
+    "languages": [
+        "Serbian (Native)",
+        "English (Professional)",
+        "German (Beginner)"
+    ],
+    "leadership": {
+        "approach": [
+            "Lead through clear communication and collaborative problem-solving",
+            "Balance hands-on technical work with strategic planning and mentorship",
+            "Foster a culture of learning and continuous improvement"
+        ],
+        "codeQuality": [
+            "Enforce consistent code standards through thorough reviews and documentation",
+            "Prioritize maintainability, readability, and testing in all deliverables",
+            "Encourage refactoring and technical debt management"
+        ],
+        "communication": [
+            "Participate actively in Agile ceremonies and ensure team alignment",
+            "Translate technical complexity into clear business value",
+            "Maintain transparent processes for releases and project tracking"
+        ]
+    },
+    "footer": {
+        "text": "© 2025 Lazar Manasijevic",
+        "openTo": "Open to remote/hybrid Technical Lead roles, architecture positions, and consulting opportunities"
+    }
+}

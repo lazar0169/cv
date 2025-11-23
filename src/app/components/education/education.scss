@@ -1,0 +1,107 @@
+section {
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+
+  svg {
+    width: 28px;
+    height: 28px;
+    color: var(--icon-color);
+    opacity: 0.9;
+  }
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+    margin-left: 0.5rem;
+    opacity: 0.6;
+  }
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-left: 3rem;
+}
+
+.edu-item {
+  border-left: 2px solid var(--border);
+  padding-left: 1rem;
+}
+
+.edu-degree {
+  display: block;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.edu-school {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: block;
+}
+
+.date {
+  margin-top: 0.2rem;
+  font-family: 'Inter', monospace;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.languages-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.languages-title {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.language-pill {
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: var(--transition);
+
+  &:hover {
+    border-color: var(--text-muted);
+    color: var(--text-main);
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-grid {
+    padding-left: 0;
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}

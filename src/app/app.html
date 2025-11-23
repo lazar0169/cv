@@ -1,0 +1,14 @@
+<div class="container">
+  @if (portfolioData()) {
+    <app-hero [profile]="portfolioData()!.profile" [contact]="portfolioData()!.contact" />
+    <app-snapshot />
+    <app-skills [skillGroups]="portfolioData()!.skills" />
+    <app-experience [experiences]="portfolioData()!.experience" />
+    <app-projects [projects]="portfolioData()!.projects" />
+    <app-leadership [leadership]="portfolioData()!.leadership" />
+    <app-education [education]="portfolioData()!.education" [languages]="portfolioData()!.languages" />
+    <app-contact [footer]="portfolioData()!.footer" />
+  } @else {
+    <div style="text-align: center; padding: 2rem;">Loading...</div>
+  }
+</div>

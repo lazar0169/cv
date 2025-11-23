@@ -1,0 +1,30 @@
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  color: #52525b;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .footer-tagline {
+    margin-top: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+}
+
+@media print {
+  footer {
+    border-top: 2px solid #000;
+    color: #000;
+
+    .footer-tagline {
+      color: #000;
+    }
+  }
+}

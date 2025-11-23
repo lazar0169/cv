@@ -1,0 +1,27 @@
+<header class="reveal">
+  <div class="header-text">
+    <div class="role">{{ profile.role }}</div>
+    <h1>{{ profile.name }}</h1>
+    <p class="summary" [innerHTML]="profile.summary"></p>
+
+    <div class="contact-bar">
+      <a
+        *ngFor="let item of contact"
+        [href]="item.link"
+        class="contact-item"
+        [attr.target]="item.type === 'linkedin' ? '_blank' : null"
+      >
+        <span [innerHTML]="getIcon(item.icon)"></span>
+        {{ item.label }}
+      </a>
+    </div>
+  </div>
+
+  <div class="profile-image-container">
+    <img
+      [src]="profile.image"
+      [alt]="profile.name"
+      class="profile-img"
+    />
+  </div>
+</header>

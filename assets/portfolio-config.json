@@ -10,8 +10,8 @@
     "contact": [
         {
             "type": "email",
-            "label": "lazar@manasijevic.com",
-            "link": "mailto:lazar@manasijevic.com",
+            "label": "Contact Me",
+            "link": "#",
             "icon": "email"
         },
         {

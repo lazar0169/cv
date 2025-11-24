@@ -1,0 +1,71 @@
+<div class="modal-backdrop" (click)="onBackdropClick($event)">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Get in Touch</h2>
+      <button class="close-btn" (click)="closeModal()" aria-label="Close">&times;</button>
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          placeholder="Your name"
+          [class.error]="name?.invalid && name?.touched"
+        />
+        <span class="error-message" *ngIf="name?.invalid && name?.touched">
+          <span *ngIf="name?.errors?.['required']">Name is required</span>
+          <span *ngIf="name?.errors?.['minlength']">Name must be at least 2 characters</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="your@email.com"
+          [class.error]="email?.invalid && email?.touched"
+        />
+        <span class="error-message" *ngIf="email?.invalid && email?.touched">
+          <span *ngIf="email?.errors?.['required']">Email is required</span>
+          <span *ngIf="email?.errors?.['email']">Please enter a valid email</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          formControlName="message"
+          placeholder="Your message..."
+          rows="5"
+          [class.error]="message?.invalid && message?.touched"
+        ></textarea>
+        <span class="error-message" *ngIf="message?.invalid && message?.touched">
+          <span *ngIf="message?.errors?.['required']">Message is required</span>
+          <span *ngIf="message?.errors?.['minlength']">Message must be at least 10 characters</span>
+        </span>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn-primary" [disabled]="isSubmitting">
+          <span *ngIf="!isSubmitting">Send Message</span>
+          <span *ngIf="isSubmitting">Sending...</span>
+        </button>
+      </div>
+
+      <div class="status-message success" *ngIf="submitSuccess">
+        Message sent successfully! I'll get back to you soon.
+      </div>
+
+      <div class="status-message error" *ngIf="submitError">
+        Failed to send message. Please try again or contact me directly on LinkedIn.
+      </div>
+    </form>
+  </div>
+</div>

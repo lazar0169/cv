@@ -10,6 +10,7 @@
         [href]="item.link"
         class="contact-item"
         [attr.target]="item.type === 'linkedin' ? '_blank' : null"
+        (click)="handleContactClick(item, $event)"
       >
         <span [innerHTML]="getIcon(item.icon)"></span>
         {{ item.label }}

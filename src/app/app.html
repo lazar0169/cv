@@ -12,3 +12,7 @@
     <div style="text-align: center; padding: 2rem;">Loading...</div>
   }
 </div>
+
+@if (contactModalService.isOpen()) {
+  <app-contact-modal />
+}

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -14,6 +14,7 @@ export class ContactModal {
   private fb = inject(FormBuilder);
   private http = inject(HttpClient);
   private contactModalService = inject(ContactModalService);
+  private cdr = inject(ChangeDetectorRef);
 
   contactForm: FormGroup;
   isSubmitting = false;
@@ -28,8 +29,16 @@ export class ContactModal {
     });
   }
 
-  closeModal() {
-    this.contactModalService.close();
+  closeModal(delay: number = 0) {
+    setTimeout(() => {
+      this.contactModalService.close();
+      // Reset form and states after modal closes (for next time)
+      setTimeout(() => {
+        this.contactForm.reset();
+        this.submitSuccess = false;
+        this.submitError = false;
+      }, 300);
+    }, delay);
   }
 
   onBackdropClick(event: MouseEvent) {
@@ -61,8 +70,8 @@ export class ContactModal {
 
       if (response.success) {
         this.submitSuccess = true;
-        this.contactForm.reset();
-        setTimeout(() => this.closeModal(), 2000);
+        this.cdr.detectChanges();
+        this.closeModal(2500); // Close after 2 seconds
       } else {
         this.submitError = true;
       }

@@ -5,7 +5,19 @@
       <button class="close-btn" (click)="closeModal()" aria-label="Close">&times;</button>
     </div>
 
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    @if (submitSuccess) {
+      <div class="success-state">
+        <div class="status-message success">
+          ✓ Message sent successfully! I'll get back to you soon.
+        </div>
+        <p style="color: var(--text-muted); text-align: center; margin-top: 16px;">
+          Closing in a moment...
+        </p>
+      </div>
+    }
+
+    @if (!submitSuccess) {
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="name">Name</label>
         <input
@@ -54,18 +66,21 @@
       <div class="form-actions">
         <button type="button" class="btn-secondary" (click)="closeModal()">Cancel</button>
         <button type="submit" class="btn-primary" [disabled]="isSubmitting">
-          <span *ngIf="!isSubmitting">Send Message</span>
-          <span *ngIf="isSubmitting">Sending...</span>
+          @if (!isSubmitting) {
+            <span>Send Message</span>
+          }
+          @if (isSubmitting) {
+            <span>Sending...</span>
+          }
         </button>
       </div>
 
-      <div class="status-message success" *ngIf="submitSuccess">
-        Message sent successfully! I'll get back to you soon.
-      </div>
-
-      <div class="status-message error" *ngIf="submitError">
-        Failed to send message. Please try again or contact me directly on LinkedIn.
-      </div>
-    </form>
+      @if (submitError) {
+        <div class="status-message error">
+          Failed to send message. Please try again or contact me directly on LinkedIn.
+        </div>
+      }
+      </form>
+    }
   </div>
 </div>

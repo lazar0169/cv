@@ -77,7 +77,7 @@ h2 {
   font-weight: 400;
 
   &::before {
-    content: '"';
+    content: ' ';
     margin: 0 0.5rem;
     opacity: 0.5;
   }
@@ -131,8 +131,13 @@ h2 {
     gap: 0.2rem;
   }
 
-  .company::before {
-    display: none;
+  .company {
+    display: block;
+    margin-top: 0.25rem;
+
+    &::before {
+      display: none;
+    }
   }
 
   .date {

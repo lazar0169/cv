@@ -1,10 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Leadership } from '../../models/portfolio.model';
 
 @Component({
   selector: 'app-leadership',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './leadership.html',
   styleUrl: './leadership.scss',
 })

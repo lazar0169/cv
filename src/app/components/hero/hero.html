@@ -5,16 +5,17 @@
     <p class="summary" [innerHTML]="profile.summary"></p>
 
     <div class="contact-bar">
-      <a
-        *ngFor="let item of contact"
-        [href]="item.link"
-        class="contact-item"
-        [attr.target]="item.type === 'linkedin' ? '_blank' : null"
-        (click)="handleContactClick(item, $event)"
-      >
-        <span [innerHTML]="getIcon(item.icon)"></span>
-        {{ item.label }}
-      </a>
+      @for (item of contact; track item.type) {
+        <a
+          [href]="item.link"
+          class="contact-item"
+          [attr.target]="item.type === 'linkedin' ? '_blank' : null"
+          (click)="handleContactClick(item, $event)"
+        >
+          <span [innerHTML]="getIcon(item.icon)"></span>
+          {{ item.label }}
+        </a>
+      }
     </div>
   </div>
 

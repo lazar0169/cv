@@ -7,30 +7,42 @@
   </h2>
 
   <div class="projects-grid">
-    <div *ngFor="let project of displayedProjects" class="project-card reveal">
-      <div class="project-header">
-        <h3 class="project-title">{{ project.title }}</h3>
-        <span class="project-role">{{ project.role }}</span>
-      </div>
+    @for (project of displayedProjects; track project.title) {
+      <div class="project-card reveal">
+        <div class="project-header">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <span class="project-role">{{ project.role }}</span>
+        </div>
 
-      <div class="project-stack">
-        <span *ngFor="let tech of project.stack" class="tech-badge">{{ tech }}</span>
-      </div>
+        <div class="project-stack">
+          @for (tech of project.stack; track tech) {
+            <span class="tech-badge">{{ tech }}</span>
+          }
+        </div>
 
-      <div class="project-details">
-        <div class="project-section" *ngIf="project.context">
-          <strong>Context:</strong> {{ project.context }}
-        </div>
-        <div class="project-section" *ngIf="project.problem">
-          <strong>Problem:</strong> {{ project.problem }}
-        </div>
-        <div class="project-section" *ngIf="project.approach">
-          <strong>Approach:</strong> {{ project.approach }}
-        </div>
-        <div class="project-section" *ngIf="project.result">
-          <strong>Result:</strong> {{ project.result }}
+        <div class="project-details">
+          @if (project.context) {
+            <div class="project-section">
+              <strong>Context:</strong> {{ project.context }}
+            </div>
+          }
+          @if (project.problem) {
+            <div class="project-section">
+              <strong>Problem:</strong> {{ project.problem }}
+            </div>
+          }
+          @if (project.approach) {
+            <div class="project-section">
+              <strong>Approach:</strong> {{ project.approach }}
+            </div>
+          }
+          @if (project.result) {
+            <div class="project-section">
+              <strong>Result:</strong> {{ project.result }}
+            </div>
+          }
         </div>
       </div>
-    </div>
+    }
   </div>
 </section>

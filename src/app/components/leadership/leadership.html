@@ -15,7 +15,9 @@
         Approach
       </h3>
       <ul class="leadership-list">
-        <li *ngFor="let item of leadership.approach">{{ item }}</li>
+        @for (item of leadership.approach; track item) {
+          <li>{{ item }}</li>
+        }
       </ul>
     </div>
 
@@ -27,7 +29,9 @@
         Code Quality
       </h3>
       <ul class="leadership-list">
-        <li *ngFor="let item of leadership.codeQuality">{{ item }}</li>
+        @for (item of leadership.codeQuality; track item) {
+          <li>{{ item }}</li>
+        }
       </ul>
     </div>
 
@@ -39,7 +43,9 @@
         Communication
       </h3>
       <ul class="leadership-list">
-        <li *ngFor="let item of leadership.communication">{{ item }}</li>
+        @for (item of leadership.communication; track item) {
+          <li>{{ item }}</li>
+        }
       </ul>
     </div>
   </div>

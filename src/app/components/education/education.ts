@@ -1,10 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Education } from '../../models/portfolio.model';
 
 @Component({
   selector: 'app-education',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './education.html',
   styleUrl: './education.scss',
 })

@@ -7,17 +7,23 @@
   </h2>
 
   <div class="experience-list">
-    <div *ngFor="let exp of experiences" class="experience-item reveal">
-      <div class="card-header">
-        <div>
-          <span class="job-title">{{ exp.title }}</span>
-          <span class="company">{{ exp.company }}</span>
+    @for (exp of experiences; track $index) {
+      <div class="experience-item reveal">
+        <div class="card-header">
+          <div>
+            <span class="job-title">{{ exp.title }}</span>
+            <span class="company">{{ exp.company }}</span>
+          </div>
+          <div class="date">{{ exp.date }}</div>
         </div>
-        <div class="date">{{ exp.date }}</div>
+        @if (exp.responsibilities.length > 0) {
+          <ul class="job-details">
+            @for (responsibility of exp.responsibilities; track $index) {
+              <li>{{ responsibility }}</li>
+            }
+          </ul>
+        }
       </div>
-      <ul *ngIf="exp.responsibilities.length > 0" class="job-details">
-        <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
-      </ul>
-    </div>
+    }
   </div>
 </section>

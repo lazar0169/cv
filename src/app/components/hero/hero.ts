@@ -1,12 +1,11 @@
 import { Component, Input, inject } from '@angular/core';
 import { Profile, ContactItem } from '../../models/portfolio.model';
-import { CommonModule } from '@angular/common';
 import { ContactModalService } from '../../services/contact-modal';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })

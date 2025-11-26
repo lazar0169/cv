@@ -7,11 +7,15 @@
   </h2>
 
   <div class="skills-container">
-    <div *ngFor="let group of skillGroups" class="skill-group" [class.primary]="group.primary">
-      <h3 class="skill-category">{{ group.category }}</h3>
-      <div class="skills-wrapper">
-        <span *ngFor="let skill of group.skills" class="skill-pill">{{ skill }}</span>
+    @for (group of skillGroups; track group.category) {
+      <div class="skill-group" [class.primary]="group.primary">
+        <h3 class="skill-category">{{ group.category }}</h3>
+        <div class="skills-wrapper">
+          @for (skill of group.skills; track skill) {
+            <span class="skill-pill">{{ skill }}</span>
+          }
+        </div>
       </div>
-    </div>
+    }
   </div>
 </section>

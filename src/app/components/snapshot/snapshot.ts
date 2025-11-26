@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 export interface SnapshotCard {
   icon: string;
@@ -9,7 +8,7 @@ export interface SnapshotCard {
 
 @Component({
   selector: 'app-snapshot',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './snapshot.html',
   styleUrl: './snapshot.scss',
 })

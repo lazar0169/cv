@@ -1,4 +1,6 @@
 <footer>
   <p>{{ footer.text }}</p>
-  <p *ngIf="footer.openTo" class="footer-tagline">{{ footer.openTo }}</p>
+  @if (footer.openTo) {
+    <p class="footer-tagline">{{ footer.openTo }}</p>
+  }
 </footer>

@@ -1,12 +1,11 @@
 import { Component, inject, ChangeDetectorRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ContactModalService } from '../../services/contact-modal';
 
 @Component({
   selector: 'app-contact-modal',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact-modal.html',
   styleUrl: './contact-modal.scss',
 })
